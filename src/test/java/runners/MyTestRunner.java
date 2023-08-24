@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src//test//resources//features//",
 		glue = {"stepDefinations"},
-		dryRun = true,
+		dryRun = false,
 		monochrome = true,
 		plugin = {"pretty",
 				"html:target/reports/HtmlReport.html",
