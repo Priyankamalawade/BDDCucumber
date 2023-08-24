@@ -11,9 +11,11 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true,
 		plugin = {"pretty",
 				"html:target/reports/HtmlReport.html",
-				"usage:target/reports/UsageReport",
-				"json:target/report/JsonReport.json",
-				"junit:target/report/JunitReport.xml"}
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+		/*
+		 * "usage:target/reports/UsageReport", "json:target/report/JsonReport.json",
+		 * "junit:target/report/JunitReport.xml"
+		 */}
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests {
 	
